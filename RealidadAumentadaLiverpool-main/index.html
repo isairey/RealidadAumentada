@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <style>
+        body { margin: 0; overflow: hidden; }
+        #background-video { 
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+            z-index: -1; 
+        }
+        canvas { display: block; position: absolute; top: 0; left: 0; }
+        .dialog {
+            position: absolute;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <video id="background-video" autoplay muted playsinline></video>
+    <div class="dialog" id="dialog">
+        <p id="message">¡Sigue adelante, nunca te rindas!</p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script>
+        // Acceder a la cámara trasera del dispositivo
+        navigator.mediaDevices.getUserMedia({
+        video: {
+            facingMode: 'environment' // Intenta con esta opción
+            }
+        })
+        .then(stream => {
+            video.srcObject = stream;
+        })
+        .catch(err => {
+            console.error("Error al acceder a la cámara trasera: ", err);
+        });
+
+        // Crear la escena
+        const scene = new THREE.Scene();
+
+        // Crear la cámara
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        camera.position.z = 5;
+
+        // Crear el renderizador
+        const renderer = new THREE.WebGLRenderer({ alpha: true }); // Alpha para fondo transparente
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+
+        // Añadir luz a la escena
+        const ambientLight = new THREE.AmbientLight(0x404040); // luz suave
+        scene.add(ambientLight);
+
+        const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+        directionalLight.position.set(1, 1, 1).normalize();
+        scene.add(directionalLight);
+
+        // Añadir OrbitControls
+        const controls = new THREE.OrbitControls(camera, renderer.domElement);
+
+        // Variable para almacenar el modelo cargado
+        let model;
+
+        // Cargar el archivo GLTF
+        const loader = new THREE.GLTFLoader();
+        loader.load('scene.gltf', function(gltf) {
+            model = gltf.scene;
+            scene.add(model);
+        }, undefined, function(error) {
+            console.error(error);
+        });
+
+        // Función de animación
+        function animate() {
+            requestAnimationFrame(animate);
+            controls.update(); // actualizar los controles en cada frame
+            renderer.render(scene, camera);
+            updateDialogPosition();
+        }
+
+        animate();
+
+        // Manejar el redimensionamiento de la ventana
+        window.addEventListener('resize', () => {
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+            renderer.setSize(width, height);
+            camera.aspect = width / height;
+            camera.updateProjectionMatrix();
+        });
+
+        // Actualizar el mensaje motivacional
+        const messages = [
+            "¡Sigue adelante, nunca te rindas!",
+            "¡Eres más fuerte de lo que piensas!",
+            "¡Cada día es una nueva oportunidad!",
+            "¡La perseverancia te llevará lejos!",
+            "¡Cree en ti mismo y en tus sueños!"
+        ];
+        let currentMessageIndex = 0;
+
+        function updateMessage() {
+            const messageElement = document.getElementById('message');
+            messageElement.textContent = messages[currentMessageIndex];
+            currentMessageIndex = (currentMessageIndex + 1) % messages.length;
+        }
+
+        // Cambiar mensaje cada 5 segundos
+        setInterval(updateMessage, 5000);
+
+        // Actualizar la posición del cuadro de diálogo
+        function updateDialogPosition() {
+            if (!model) return;
+
+            // Asumiendo que la boca del modelo está en (0, 0, 0) en el espacio local del modelo
+            const mouthPosition = new THREE.Vector3(.3, 3.3, 0);
+
+            // Convertir la posición de la boca a coordenadas mundiales
+            mouthPosition.applyMatrix4(model.matrixWorld);
+
+            // Proyectar la posición de la boca en las coordenadas de la pantalla
+            const vector = mouthPosition.project(camera);
+
+            // Convertir a coordenadas de pantalla
+            const x = (vector.x * 0.5 + 0.5) * window.innerWidth;
+            const y = (1 - (vector.y * 0.5 + 0.5)) * window.innerHeight;
+
+            // Actualizar la posición del cuadro de diálogo
+            const dialog = document.getElementById('dialog');
+            dialog.style.left = `${x}px`;
+            dialog.style.top = `${y}px`;
+        }
+    </script>
+</body>
+</html>

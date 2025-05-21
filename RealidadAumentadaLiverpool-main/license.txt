@@ -1,0 +1,11 @@
+Model Information:
+* title:	Kraang Robot
+* source:	https://sketchfab.com/3d-models/kraang-robot-f9235ad901f248169c9fc2ae999eb348
+* author:	vasian-65 (https://sketchfab.com/vasian-65)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Kraang Robot" (https://sketchfab.com/3d-models/kraang-robot-f9235ad901f248169c9fc2ae999eb348) by vasian-65 (https://sketchfab.com/vasian-65) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
