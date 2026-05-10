@@ -152,7 +152,7 @@ El proyecto fue desarrollado para practicar:
 # 📂 Estructura del proyecto
 
 ```bash
-AR_System/
+RealidadAumentada/
 │
 ├── Assets/           # Modelos 3D y recursos
 ├── Scripts/          # Lógica en C#
@@ -170,7 +170,7 @@ AR_System/
 ## 1️⃣ Clonar repositorio
 
 ```bash
-git clone https://github.com/tu-usuario/ar-system.git
+git clone https://github.com/isairey/RealidadAumentada.git
 ```
 
 ---
