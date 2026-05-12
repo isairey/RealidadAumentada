@@ -1,28 +1,29 @@
 <div align="center">
 
-<img width="220" src="https://cdn-icons-png.flaticon.com/512/833/833314.png" />
+<img width="220" src="https://nestjs.com/img/logo-small.svg" />
 
-# 🥽 Proyecto de Realidad Aumentada (AR System)
+# 🎬 Movie Streaming Platform
 
-### Experiencia inmersiva de Realidad Aumentada 🚀
+### Plataforma OTT de streaming multimedia 🚀
 
 <p align="center">
-  <b>AR System</b> es un proyecto de Realidad Aumentada diseñado para superponer elementos digitales en el mundo real, integrando modelos 3D, interacción en tiempo real y reconocimiento de marcadores o GPS para crear experiencias inmersivas.
+  <b>Movie Streaming Platform</b> es una plataforma OTT moderna desarrollada con ReactJS, NodeJS, NestJS y MongoDB, diseñada para ofrecer streaming de películas y series con reproducción adaptativa mediante MPEG-DASH.
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/AR-Reality%20Augmented-blue?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Unity-Engine-000000?style=for-the-badge&logo=unity&logoColor=white">
-  <img src="https://img.shields.io/badge/ARCore-Google-34A853?style=for-the-badge&logo=google&logoColor=white">
-  <img src="https://img.shields.io/badge/ARKit-Apple-000000?style=for-the-badge&logo=apple&logoColor=white">
+  <img src="https://img.shields.io/badge/React-Frontend-61DAFB?style=for-the-badge&logo=react&logoColor=white">
+  <img src="https://img.shields.io/badge/NestJS-Backend-E0234E?style=for-the-badge&logo=nestjs&logoColor=white">
+  <img src="https://img.shields.io/badge/Node.js-Server-339933?style=for-the-badge&logo=node.js&logoColor=white">
+  <img src="https://img.shields.io/badge/MongoDB-Database-47A248?style=for-the-badge&logo=mongodb&logoColor=white">
 </p>
 
 <p align="center">
   <a href="#-acerca-del-proyecto">Acerca</a> •
   <a href="#-características">Características</a> •
   <a href="#-tecnologías-utilizadas">Tecnologías</a> •
+  <a href="#-arquitectura-del-sistema">Arquitectura</a> •
   <a href="#-instalación">Instalación</a> •
-  <a href="#-casos-de-uso">Casos de uso</a>
+  <a href="#-capturas">Capturas</a>
 </p>
 
 </div>
@@ -31,136 +32,131 @@
 
 # 🌌 Acerca del proyecto
 
-**AR System** es una aplicación de Realidad Aumentada que permite visualizar objetos digitales en el mundo físico a través de la cámara de un dispositivo móvil o visor AR.
+**Movie Streaming Platform** es una plataforma de streaming tipo OTT enfocada en la reproducción de contenido multimedia bajo demanda.
 
-El sistema está diseñado para crear experiencias interactivas, educativas y de simulación mediante el uso de modelos 3D, reconocimiento de superficies y marcadores.
+El sistema permite a los usuarios explorar películas, series y actores, mientras que los administradores pueden gestionar contenido, recursos y datos desde un panel administrativo completo.
 
-El proyecto permite:
-
-- 🥽 Visualización de objetos 3D en tiempo real
-- 📍 Integración con GPS y coordenadas
-- 🎯 Detección de marcadores AR
-- 🧠 Interacción con objetos virtuales
-- 📱 Compatibilidad móvil
-- 🎮 Experiencias interactivas
-- 🏫 Aplicaciones educativas
-- 🏙️ Visualización en entornos reales
-
-El proyecto fue desarrollado para practicar:
-
-- Realidad Aumentada
-- Motores gráficos 3D
-- Interacción humano-computadora
-- Unity / WebAR / ARCore
-- Modelado 3D
-- Programación en tiempo real
+La plataforma utiliza streaming adaptativo mediante el protocolo **MPEG-DASH**, permitiendo ajustar automáticamente la calidad del video dependiendo de la conexión del usuario.
 
 ---
 
 # ✨ Características
 
-## 🥽 Experiencia AR
+## 🎥 Plataforma de streaming
 
-- 📷 Superposición de objetos en tiempo real
-- 🧭 Seguimiento espacial
-- 🎯 Reconocimiento de superficies
-- 🪐 Modelos 3D interactivos
-- ⚡ Renderizado en tiempo real
-
----
-
-## 📱 Compatibilidad
-
-- 🤖 Android (ARCore)
-- 🍎 iOS (ARKit)
-- 🌐 WebAR (opcional)
-- 📲 Dispositivos móviles
+- 🍿 Reproducción de películas y series
+- 🎬 Navegación de contenido multimedia
+- 👥 Información de actores y cast
+- 🔎 Sistema de exploración de contenido
+- ⚡ Interfaz rápida y moderna
 
 ---
 
-## 🎮 Interacción
+## 📡 Streaming adaptativo
 
-- 👆 Tocar objetos virtuales
-- 🔄 Rotación y escalado
-- 🎯 Activación de eventos
-- 🧠 Interacciones dinámicas
+- 🎞️ Soporte MPEG-DASH
+- ⚡ Streaming dinámico
+- 🌐 Optimización de ancho de banda
+- 📶 Calidad adaptable automáticamente
+- 🚀 Mejor experiencia multimedia
 
 ---
 
-## 🧠 Funcionalidades avanzadas
+## 🛠️ Panel administrativo
 
-- 📍 Geolocalización AR
-- 🧭 Tracking de movimiento
-- 🏗️ Detección de planos
-- 🎥 Cámara en tiempo real
-- 🔊 Integración multimedia
+- 📂 Gestión de películas
+- 👤 Administración de usuarios
+- 🎭 Gestión de cast y categorías
+- 📊 Control del contenido
+- ⚙️ Administración centralizada
+
+---
+
+## 🔐 Backend robusto
+
+- 🚀 API REST con NestJS
+- 🛡️ Arquitectura escalable
+- 🗄️ Integración con MongoDB
+- 🔄 Manejo eficiente de datos
+- 📦 Estructura modular
 
 ---
 
 # 🛠️ Tecnologías utilizadas
 
-## 🎮 Motor de desarrollo
+## 🎨 Frontend
 
 <p>
-  <img src="https://skillicons.dev/icons?i=unity,cs" />
+  <img src="https://skillicons.dev/icons?i=react,js,html,css" />
 </p>
 
-- Unity Engine
-- C#
-- AR Foundation
+- ReactJS
+- JavaScript
+- HTML5
+- CSS3
 
 ---
 
-## 📱 Realidad Aumentada
+## ⚙️ Backend
 
 <p>
-  <img src="https://skillicons.dev/icons?i=androidstudio,apple" />
-</p>
-
-- ARCore (Google)
-- ARKit (Apple)
-- WebAR (opcional)
-- Vuforia (opcional)
-
----
-
-## 🌐 Backend (opcional)
-
-<p>
-  <img src="https://skillicons.dev/icons?i=nodejs,python,php" />
+  <img src="https://skillicons.dev/icons?i=nodejs,nestjs" />
 </p>
 
 - Node.js
-- Python
-- PHP
-- APIs REST
+- NestJS
+- REST API
+- Express
 
 ---
 
-## 🎨 Modelado y assets
+## 🗄️ Base de datos
 
 <p>
-  <img src="https://skillicons.dev/icons?i=blender,figma" />
+  <img src="https://skillicons.dev/icons?i=mongodb" />
 </p>
 
-- Blender (modelos 3D)
-- Figma (UI)
-- Texturas y assets AR
+- MongoDB
+- Mongoose
+
+---
+
+## 🌐 Streaming y multimedia
+
+- MPEG-DASH
+- Adaptive Bitrate Streaming
+- Video Streaming Protocols
+
+---
+
+# 🏗️ Arquitectura del sistema
+
+<div align="center">
+
+<img width="900" src="https://user-images.githubusercontent.com/60309530/228673609-47506b08-b354-49a8-bc2a-eeb47b9f13a7.png" />
+
+</div>
 
 ---
 
 # 📂 Estructura del proyecto
 
 ```bash
-RealidadAumentada/
+movie-streaming-platform/
 │
-├── Assets/           # Modelos 3D y recursos
-├── Scripts/          # Lógica en C#
-├── Scenes/           # Escenas Unity
-├── Prefabs/          # Objetos reutilizables
-├── Materials/        # Materiales visuales
-├── Plugins/          # Integraciones AR
-└── UI/               # Interfaz del sistema
+├── client/             # Cliente principal React
+├── admin/              # Panel administrativo
+├── api/                # API NestJS
+├── src/
+│   ├── modules/
+│   ├── controllers/
+│   ├── services/
+│   ├── schemas/
+│   └── utils/
+│
+├── public/
+├── uploads/
+└── package.json
 ```
 
 ---
@@ -170,71 +166,138 @@ RealidadAumentada/
 ## 1️⃣ Clonar repositorio
 
 ```bash
-git clone https://github.com/isairey/RealidadAumentada.git
+git clone https://github.com/LanChuHoang/movie-streaming-api.git
 ```
 
 ---
 
-## 2️⃣ Abrir en Unity
+## 2️⃣ Instalar dependencias
 
-- Abrir Unity Hub
-- Seleccionar proyecto
-- Importar dependencias
-
----
-
-## 3️⃣ Configurar AR
-
-### Android
-
-- Activar ARCore
-- Habilitar cámara
-
-### iOS
-
-- Activar ARKit
-- Configurar permisos
+```bash
+npm install
+```
 
 ---
 
-## 4️⃣ Ejecutar proyecto
+## 3️⃣ Configurar variables de entorno
 
-- Conectar dispositivo móvil
-- Presionar ▶️ Play en Unity
+Crear archivo `.env`
 
----
-
-# 🎮 Casos de uso
-
-## 🏫 Educación
-
-- Visualización de anatomía 3D
-- Historia interactiva
-- Simulaciones científicas
+```env
+MONGO_URI=your_database_url
+PORT=3000
+JWT_SECRET=secret_key
+```
 
 ---
 
-## 🏙️ Arquitectura
+## 4️⃣ Ejecutar servidor
 
-- Visualización de edificios
-- Prototipos en escala real
-- Diseño urbano
-
----
-
-## 🎮 Entretenimiento
-
-- Juegos AR
-- Experiencias inmersivas
-- Animaciones interactivas
+```bash
+npm run start:dev
+```
 
 ---
 
-## 🏭 Industria
+# 🌐 Proyectos relacionados
 
-- Simulación de procesos
-- Entrenamiento técnico
-- Manuales interactivos
+## 🎬 User Client
+
+- Plataforma principal para usuarios
+- Navegación y reproducción multimedia
+
+```bash
+https://github.com/LanChuHoang/movie-streaming-client
+```
+
+---
+
+## 🛠️ Admin Client
+
+- Panel de administración
+- Gestión completa del sistema
+
+```bash
+https://github.com/LanChuHoang/movie-streaming-admin
+```
+
+---
+
+## ⚙️ API
+
+- Backend desarrollado con NestJS
+
+```bash
+https://github.com/LanChuHoang/movie-streaming-api
+```
+
+---
+
+# 🚀 Deploys
+
+## 🌐 Aplicación de usuarios
+
+```bash
+https://gr1-client.netlify.app/
+```
+
+---
+
+## 🛠️ Panel administrativo
+
+```bash
+https://gr1-admin.netlify.app/
+```
+
+---
+
+# 📮 API Testing
+
+## 🧪 Postman Collection
+
+<div align="center">
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/17446967-a243c426-5e10-4fd5-ae7d-15c570dccf58?action=collection%2Ffork&collection-url=entityId%3D17446967-a243c426-5e10-4fd5-ae7d-15c570dccf58%26entityType%3Dcollection%26workspaceId%3De7602a49-1d9b-4164-a641-2b519f5e1aae)
+
+</div>
+
+---
+
+# 📸 Capturas
+
+# 🎬 Cliente de usuario
+
+<div align="center">
+
+<img width="1000" src="https://user-images.githubusercontent.com/60309530/196149493-2ee0900d-6f2a-4f03-9f40-a28defc9c740.png" />
+
+</div>
+
+---
+
+# 🛠️ Panel administrativo
+
+<div align="center">
+
+<img width="1000" src="https://user-images.githubusercontent.com/60309530/228672347-a8a87e7c-09de-491e-9234-5aa5126aa311.png" />
+
+<br><br>
+
+<img width="1000" src="https://user-images.githubusercontent.com/60309530/228672534-db9b6374-07c2-49e4-9848-9dbd1a22ff8d.png" />
+
+<br><br>
+
+<img width="1000" src="https://user-images.githubusercontent.com/60309530/228672600-b1dba1bf-ed0b-464c-b27b-48dbfc530776.png" />
+
+<br><br>
+
+<img width="1000" src="https://user-images.githubusercontent.com/60309530/228672650-1a940f7b-ca40-49f7-8f7e-6f7a542e7047.png" />
+
+<br><br>
+
+<img width="1000" src="https://user-images.githubusercontent.com/60309530/228672749-73bb8fd9-9bc3-41bf-af98-afe11189d804.png" />
+
+</div>
 
 ---
 
@@ -242,26 +305,28 @@ git clone https://github.com/isairey/RealidadAumentada.git
 
 ## 🎯 Aprender y practicar
 
-- Realidad aumentada
-- Desarrollo 3D
-- Unity Engine
-- ARCore / ARKit
-- Programación en C#
-- Interacción en tiempo real
+- Arquitectura Full Stack
+- Streaming multimedia
+- NestJS y Node.js
+- ReactJS moderno
+- APIs REST
+- MongoDB
+- Gestión multimedia
+- Sistemas OTT
 
 ---
 
-# 📊 Roadmap
+# 🚧 Roadmap
 
-## 🚧 Próximas mejoras
+## 🔮 Próximas mejoras
 
-- 🌐 WebAR sin app
-- 🤖 IA integrada en AR
-- 🗺️ AR con mapas avanzados
-- 🎮 Minijuegos AR
-- 👥 Multijugador AR
-- 📡 Tracking mejorado
-- 🧠 Interacción por voz
+- 📺 Live Streaming
+- 🤖 Recomendaciones con IA
+- 🌍 Multi idioma
+- 📱 Aplicación móvil
+- 🎞️ Mejoras en compresión
+- 🔐 Autenticación avanzada
+- ☁️ Escalabilidad cloud
 
 ---
 
@@ -271,26 +336,25 @@ Las contribuciones son bienvenidas ❤️
 
 ## Cómo contribuir
 
-1. Fork del proyecto  
-2. Crear rama
+1. Fork del proyecto
 
 ```bash
-git checkout -b feature/mejora-ar
+git checkout -b feature/nueva-funcionalidad
 ```
 
-3. Commit
+2. Commit de cambios
 
 ```bash
-git commit -m "✨ Mejora en experiencia AR"
+git commit -m "✨ Nueva funcionalidad"
 ```
 
-4. Push
+3. Push al repositorio
 
 ```bash
-git push origin feature/mejora-ar
+git push origin feature/nueva-funcionalidad
 ```
 
-5. Pull Request 🚀
+4. Crear Pull Request 🚀
 
 ---
 
@@ -298,9 +362,9 @@ git push origin feature/mejora-ar
 
 <div align="center">
 
-## Isai Reyes AR Developer
+## Full Stack Streaming Developer
 
-Desarrollador enfocado en Realidad Aumentada, experiencias inmersivas y tecnologías 3D.
+Desarrollador enfocado en plataformas OTT, streaming multimedia y arquitecturas modernas Full Stack.
 
 </div>
 
@@ -310,18 +374,18 @@ Desarrollador enfocado en Realidad Aumentada, experiencias inmersivas y tecnolog
 
 ⭐ Dale una estrella  
 🍴 Haz fork  
-📢 Compártelo
+📢 Comparte el proyecto
 
 ---
 
 # 📜 Licencia
 
-Proyecto educativo desarrollado para práctica de Realidad Aumentada.
+Proyecto educativo y experimental desarrollado para prácticas de streaming multimedia y arquitectura Full Stack.
 
 ---
 
 <div align="center">
 
-### 🥽 AR System — llevando lo digital al mundo real 🚀
+### 🎬 Movie Streaming Platform — streaming moderno para la nueva generación 🚀
 
 </div>
